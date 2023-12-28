@@ -19,12 +19,14 @@ button.addEventListener("click", () => {
   container.style.height = "100px"; // Set the desired height
   container.style.overflowY = "auto"; // Add scroll effect for vertical overflow
 
-  let line = document.createElement("p");
-  line.className = "p-3 mb-4 focus:outline-none";
+  let line = document.createElement("textarea");
   line.setAttribute("contenteditable", "true");
+  line.classList.add("p-3", "mb-4", "focus:outline-none");
+  line.style.height = "100px";
+  line.style.width = "410px";
 
   const img = document.createElement("img");
-  img.className = "absolute bottom-2 r-2 h-5 opacity-60 cursor-pointer";
+  img.className = "absolute bottom-2 right-2 h-5 opacity-100 cursor-pointer";
   img.setAttribute("src", "bin.jpg");
   img.setAttribute("alt", "Image");
 
